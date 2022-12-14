@@ -1,0 +1,92 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.presente{
+  width: 400px;
+  height: 400px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hover{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: .25s ease;
+}
+
+.hover:hover{
+  transform: rotate(-15deg) translateY(-100px);
+}
+
+.lacos{
+  display: flex;
+}
+
+.volta{
+  width: 150px;
+  height: 50px;
+  border: 10px solid goldenrod;
+  border-radius: 50% / 100% 50% 50% 0%;
+}
+
+.volta.esq{
+  transform: rotateY(180deg);
+}
+
+.fita{
+  background: yellowgreen;
+}
+
+.topo{
+  width: 400px;
+  height: 100px;
+
+  background: seagreen;
+
+  display: flex;
+  justify-content: center;
+
+  filter: drop-shadow(0 2px 5px);
+  border-radius: 15px;
+}
+
+.topo > .fita{
+  width: 120px;
+  height: 100px;
+}
+
+.caixa{
+  width: 360px;
+  height: 250px;
+  background: seagreen;
+
+  display: flex;
+  justify-content: center;
+
+  border-radius: 0 0 15px 15px;
+
+}
+
+.caixa > .fita{
+  background: yellowgreen;
+  width: 100px;
+  height: 100%;
+}
